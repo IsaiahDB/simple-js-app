@@ -1,5 +1,5 @@
 const popNow = alert("Hello World")
 console.log(popNow);
 
-let favoriteFood = "Sandwhich"
+let favoriteFood = "This is my Sandwhich"
 document.write(favoriteFood);
