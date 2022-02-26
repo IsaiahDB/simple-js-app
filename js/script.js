@@ -7,3 +7,5 @@ let = pokemonList = {
     weight: 19,
     type: 'Fire'
 }
+
+console.log(pokemonList)
