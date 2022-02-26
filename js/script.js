@@ -8,4 +8,6 @@ let pokemonList = {
     type: 'Fire'
 };
 
-console.log(pokemonList);
+const displayObj = pokemonList;
+
+console.log(displayObj);
