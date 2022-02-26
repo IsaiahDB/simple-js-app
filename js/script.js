@@ -1,5 +1,9 @@
-const popNow = alert("Hello World")
-console.log(popNow);
+//Pokemon Deck Build
 
-let favoriteFood = "This is my Sandwhich"
-document.write(favoriteFood);
+let = pokemonList = {
+    name: 'Growlithe',
+    height: 0.7,
+    abilities: ['flash-fire', 'Intimidate', 'Justified'],
+    weight: 19,
+    type: 'Fire'
+}
