@@ -7,14 +7,6 @@ let pokemonList = [
 
 document.write("<br>")
 
-//ForEach pokemonList
-// function ListPokemonShow(item){
-//     document.write(`${item.name} (height: ${item.height}) FOREACH STYLE <br>`)
-// }
-
-// pokemonList.forEach(ListPokemonShow)
-
-
 //IFFE Function Style
 let pokemonRepository = (function () {
     let pokemonList = [
@@ -35,40 +27,26 @@ let pokemonRepository = (function () {
         
     }
 
-    function ListPokemonShowIiiffe(item){
-        document.write(`${item.name} (height: ${item.height}) FOREACH STYLE iiffee <br>`)
-    } 
-
-    function ListAll(){
-        document.write("<br>")
-        return pokemonList.forEach(ListPokemonShowIiiffe)
-    }
-
     return {
         add: add,
         getAll: getAll,
-        ListAll: ListAll
     };
 })();
 
-console.log(pokemonRepository.getAll());
-pokemonRepository.add({name: 'Pikachu'} );
+pokemonRepository.add({name: 'Pikachu', height: 0.9} );
 console.log(pokemonRepository.getAll());
 console.log("Seperated")
-console.log(pokemonRepository.ListAll())
+pokemonList = pokemonRepository.getAll();
+pokemonList.forEach((item, i) => {
+    if(pokemonList[i].height >= 1.5){
+        document.write((pokemonList[i].name) + " (height:" + (pokemonList[i].height) +") - Wow, that's big!"+"</br></br>");
+    }else{
+        document.write((pokemonList[i].name) + " (height:" + (pokemonList[i].height) +")"+"</br></br>")
+    }
+})
 
 
 //Line breaks or spaces to break up the output
 document.write("<br>")
 document.write("<br>")
 
-//This is a for loop to show which pokemon is bigger
-function bigPokemon(itemP) {
-    if(itemP.height > 1.0){
-        document.write(`${itemP.name} height:${itemP.height} - Wow, that’s big! <br>`)
-    }else{
-        document.write(`${itemP.name} height: ${itemP.height} <br>`)
-    }
-}
-
-pokemonList.forEach(bigPokemon)
