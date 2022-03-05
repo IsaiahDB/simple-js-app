@@ -1,5 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pokemon_container {
+  margin: 20px;
+}
+
+.box_layout {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.box_layout:hover{
+  background-color: grey;
+  border-color: black;
+  border: 3px  solid black;
+}
