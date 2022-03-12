@@ -129,7 +129,6 @@ let pokemonRepository = (function () {
 })();
 
 pokemonRepository.add({name: 'pikachu', height: 0.9} );
-// console.log(pokemonRepository.getAll());
 console.log("Seperated")
 pokemonRepository.loadList().then(function () {
     pokemonRepository.getAll().forEach(function (pokemon) {
